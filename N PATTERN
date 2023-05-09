@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int rows,i,j;
+    printf("enter nuber of rows:");
+    scanf("%d",&rows);
+    
+    for(i=1;i<=rows;i++)
+    {
+        
+     printf("*");
+     
+     for(j=1;j<=rows;j++)
+     {
+        if(j == rows || i == j)
+        printf("*");
+        else
+        printf(" ");
+     }
+     printf("\n");
+    }
+    return 0;
+}
